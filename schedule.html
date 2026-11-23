@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vaccination Schedule</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eaf6ff;
+        }
+
+        /* Sidebar */
+
+        .sidebar {
+            width: 230px;
+            height: 100vh;
+            background-color: #1976d2;
+            padding: 20px;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .sidebar h2 {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 10px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+        }
+
+        .sidebar a:hover {
+            background-color: #125ca1;
+        }
+
+        /* Main Content */
+
+        .main-content {
+            margin-left: 230px;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #1976d2;
+        }
+
+        /* Schedule Table */
+
+        .table-container {
+            background-color: white;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #b0c4de;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #1976d2;
+            color: white;
+            padding: 15px;
+        }
+
+        td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #f1f8ff;
+        }
+
+        .status {
+            color: #1976d2;
+            font-weight: bold;
+        }
+
+        @media (max-width: 700px) {
+            .sidebar {
+                width: 160px;
+            }
+
+            .main-content {
+                margin-left: 160px;
+                padding: 15px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <h2>Child Vaccination</h2>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="child.html">Child Registration</a>
+
+        <a href="schedule.html">Vaccination Schedule</a>
+
+        <a href="records.html">Vaccination Records</a>
+
+        <a href="reminders.html">Notifications</a>
+
+        <a href="ind.html">Logout</a>
+
+    </div>
+
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+
+        <h1>Vaccination Schedule</h1>
+
+        <p>View vaccination dates and their status.</p>
+
+
+        <div class="table-container">
+
+            <table>
+
+                <tr>
+                    <th>Vaccine Name</th>
+                    <th>Recommended Age</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>Sample Vaccine 1</td>
+                    <td>As per schedule</td>
+                    <td>Not assigned</td>
+                    <td class="status">Pending</td>
+                </tr>
+
+                <tr>
+                    <td>Sample Vaccine 2</td>
+                    <td>As per schedule</td>
+                    <td>Not assigned</td>
+                    <td class="status">Pending</td>
+                </tr>
+
+                <tr>
+                    <td>Sample Vaccine 3</td>
+                    <td>As per schedule</td>
+                    <td>Not assigned</td>
+                    <td class="status">Pending</td>
+                </tr>
+
+                <tr>
+                    <td>Sample Vaccine 4</td>
+                    <td>As per schedule</td>
+                    <td>Not assigned</td>
+                    <td class="status">Pending</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

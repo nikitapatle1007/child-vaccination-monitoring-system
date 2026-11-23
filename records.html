@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination Records</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f6fc;
+        }
+
+        .sidebar {
+            width: 230px;
+            height: 100vh;
+            background-color: #2878b9;
+            position: fixed;
+            padding-top: 20px;
+        }
+
+        .sidebar h2 {
+            color: white;
+            text-align: center;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #1b5f96;
+        }
+
+        .main-content {
+            margin-left: 230px;
+            padding: 30px;
+        }
+
+        .records-box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+
+        h1 {
+            color: #245b8f;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #2878b9;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f7fc;
+        }
+
+        @media(max-width: 700px) {
+            .sidebar {
+                width: 160px;
+            }
+
+            .main-content {
+                margin-left: 160px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h2>Child Care</h2>
+
+        <a href="dashboard.html">Dashboard</a>
+        <a href="child.html">Child Registration</a>
+        <a href="schedule.html">Vaccination Schedule</a>
+        <a href="records.html">Vaccination Records</a>
+        <a href="reminders.html">Reminders</a>
+        <a href="ind.html">Logout</a>
+    </div>
+
+    <div class="main-content">
+
+        <h1>Vaccination Records</h1>
+
+        <div class="records-box">
+
+            <h2>All Vaccination Records</h2>
+
+            <table>
+                <tr>
+                    <th>Child Name</th>
+                    <th>Vaccine Name</th>
+                    <th>Vaccination Date</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>Sample Child 1</td>
+                    <td>Sample Vaccine 1</td>
+                    <td>Sample Date</td>
+                    <td>Completed</td>
+                </tr>
+
+                <tr>
+                    <td>Sample Child 2</td>
+                    <td>Sample Vaccine 2</td>
+                    <td>Sample Date</td>
+                    <td>Completed</td>
+                </tr>
+
+                <tr>
+                    <td>Sample Child 3</td>
+                    <td>Sample Vaccine 3</td>
+                    <td>Sample Date</td>
+                    <td>Completed</td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminders and Notifications</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f6fc;
+        }
+
+        .sidebar {
+            width: 230px;
+            height: 100vh;
+            background-color: #2878b9;
+            position: fixed;
+            padding-top: 20px;
+        }
+
+        .sidebar h2 {
+            color: white;
+            text-align: center;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #1b5f96;
+        }
+
+        .main-content {
+            margin-left: 230px;
+            padding: 30px;
+        }
+
+        .reminder-box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #245b8f;
+        }
+
+        .reminder {
+            padding: 15px;
+            margin-top: 15px;
+            border-left: 5px solid #2878b9;
+            background-color: #f2f7fc;
+            border-radius: 5px;
+        }
+
+        .upcoming {
+            color: green;
+            font-weight: bold;
+        }
+
+        .pending {
+            color: #d17a00;
+            font-weight: bold;
+        }
+
+        @media(max-width: 700px) {
+            .sidebar {
+                width: 160px;
+            }
+
+            .main-content {
+                margin-left: 160px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h2>Child Care</h2>
+
+        <a href="dashboard.html">Dashboard</a>
+        <a href="child.html">Child Registration</a>
+        <a href="schedule.html">Vaccination Schedule</a>
+        <a href="records.html">Vaccination Records</a>
+        <a href="reminders.html">Reminders</a>
+        <a href="ind.html">Logout</a>
+    </div>
+
+    <div class="main-content">
+
+        <h1>Reminders & Notifications</h1>
+
+        <div class="reminder-box">
+
+            <h2>Vaccination Reminders</h2>
+
+            <div class="reminder">
+                <h3>Sample Child 1</h3>
+                <p>Vaccine: Sample Vaccine 1</p>
+                <p>Due Date: Not assigned</p>
+                <p class="upcoming">Status: Upcoming</p>
+            </div>
+
+            <div class="reminder">
+                <h3>Sample Child 2</h3>
+                <p>Vaccine: Sample Vaccine 2</p>
+                <p>Due Date: Not assigned</p>
+                <p class="pending">Status: Pending</p>
+            </div>
+
+            <div class="reminder">
+                <h3>Sample Child 3</h3>
+                <p>Vaccine: Sample Vaccine 3</p>
+                <p>Due Date: Not assigned</p>
+                <p class="pending">Status: Pending</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

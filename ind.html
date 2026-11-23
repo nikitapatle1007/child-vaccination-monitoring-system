@@ -1,0 +1,102 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+<title>Child Vaccination Monitoring System</title>
+<style>
+body{ 
+font-family :Arial ,sans-serif;
+background-color:#eaf6ff;
+margin:0;
+padding:0;
+}
+
+.login-container {
+width:350px;
+margin:100px auto;
+padding: 25px;
+background-color: white;
+border-radius:10px;
+box-shadow:0 0 10px #b0c4de;
+text-align: center ;
+}
+
+h1{
+color:#1976d2;
+font-size:24px;
+}
+
+p{
+color:#555;
+}
+
+input{
+width:90%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+width:95%;
+padding:12px;
+background-color:#1976d2;
+color: white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size: 16px;
+}
+
+button.hover{
+background-color:#125ca1;
+}
+#message{
+color:red;
+margin-top:15px;
+}
+
+  </style>
+</head>
+<body>
+    <div class="login-container">
+       <h1>Child Vaccination System</h1>
+        <p>Login to your account</p>
+        <form id="loginForm">
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email"
+                   required>
+            <input type="password"
+                   id="password"
+                   placeholder="Enter your password"
+                   required>
+            <button type="submit">Login</button>
+  </form>
+        <p id="message"></p>
+    </div>
+    <script>
+        document.getElementById("loginForm")
+            .addEventListener("submit", function(event) {
+                event.preventDefault();
+                let email = document.getElementById("email").value;
+                let password = document.getElementById("password").value;
+                if (email === "" || password === "") {
+                    document.getElementById("message").innerText =
+                        "Please enter email and password.";
+                }
+                else {
+                    document.getElementById("message").innerText =
+                        "Login form submitted successfully!";
+                }
+            });
+    </script>
+
+</body>
+
+</html>
+
+
+

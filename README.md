@@ -1,6 +1,4 @@
 # child-vaccination-monitoring-system
-Child Vaccination Monitoring System - MITS GWALIOR
-# Child Vaccination Monitoring System
 
 ## Project Details
 A web-based academic project for managing child vaccination records, vaccine schedules, and pending vaccination records.

@@ -13,7 +13,7 @@ A web-based academic project for managing child vaccination records, vaccine sch
 MITS Gwalior
 
 ## Project Mentor
-Mr. Rahul Sethiya
+Mr. Rahul Senthiya
 
 ## Technologies Used
 - HTML
